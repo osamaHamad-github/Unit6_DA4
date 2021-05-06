@@ -1,0 +1,39 @@
+#section-1 {
+  overflow: hidden;
+  float: left;
+  margin: 30px;
+}
+
+#section-2 {
+  overflow: hidden;
+  float: left;
+  margin: 30px;
+}
+
+#header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.labels {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  border: 2px solid;
+}
+
+#calculate-button {
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid;
+}
+
+#result {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#answer {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
