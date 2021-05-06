@@ -20,26 +20,22 @@ function findTrapezoidArea () {
   // parsing through our inputs to check for forbidden inputs
   // strings, null, numbers less than or equal to zero are forbidden
   for (let i = 0; i < inputs.length; i++) {
-    // this detects values that are Not a Number
     if (isNaN(inputs[i])) {
+      // this detects values that are Not a Number
       document.getElementById('answer').innerText = 'Value Error'
 
       // setting a time out so that alert comes after html change
       setTimeout(function () { alert(`Value Error: '${inputs[i]}' is not a number`) }, 10)
       return 0
-    }
-
-    // this detects blank variables
-    else if (inputs[i] === '') {
+    } else if (inputs[i] === '') {
+      // this detects blank variables
       document.getElementById('answer').innerText = 'Value Error'
 
       // setting a time out so that alert comes after html change
       setTimeout(function () { alert('Value Error: all variables must be filled') }, 10)
       return 0
-    }
-
-    // this detects values equal to zero or any negative number
-    else if (inputs[i] <= 0) {
+    } else if (inputs[i] <= 0) {
+      // this detects values equal to zero or any negative number
       document.getElementById('answer').innerText = 'Math Error'
 
       // setting a time out so that alert comes after html change
