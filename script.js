@@ -25,31 +25,26 @@ function findTrapezoidArea () {
       document.getElementById('answer').innerText = 'Value Error'
 
       // setting a time out so that alert comes after html change
-      setTimeout(function() {
-        alert(`Value Error: '${inputs[i]}' is not a number`)
-      }, 10)
+      setTimeout (function() {alert(`Value Error: '${inputs[i]}' is not a number`)}, 10)
       return 0
-      } 
+    }
 
-        // this detects blank variables
-        else if (inputs[i] === '') {
+    // this detects blank variables
+    else if (inputs[i] === '') {
       document.getElementById('answer').innerText = 'Value Error'
 
       // setting a time out so that alert comes after html change
-      setTimeout(function() {
-        alert(`Value Error: all variables must be filled`)
-      }, 10)
+      setTimeout (function() {alert('Value Error: all variables must be filled')}, 10)
       return 0
-      } 
+    }
 
-      // this detects values equal to zero or any negative number
-      else if (inputs[i] <= 0) {
+    // this detects values equal to zero or any negative number
+    else if (inputs[i] <= 0) {
       document.getElementById('answer').innerText = 'Math Error'
 
       // setting a time out so that alert comes after html change
-      setTimeout(function() {
-      alert(`Math Error: cannot have value less than or equal to 0 (${inputs[i]})`)
-      }, 10)
+      setTimeout (function() {
+        alert(`Math Error: cannot have value less than or equal to 0 (${inputs[i]})`)}, 10)
       return 0
     }
   }
